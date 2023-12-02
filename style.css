@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+/* body{
     padding: 30px;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 /* ==============Start Media================= */
-
+/* 
 @media (max-width: 1200px){
     .container div{
         width: 150px;
@@ -43,5 +43,39 @@ body{
 
     .container div{
         width: 100%;
+    }
+}  */
+
+header{
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(207, 207, 207);
+}
+
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+@media (max-width: 730px){
+    header ul{
+        gap: 30px;
+    }
+}
+
+@media (max-width:600px){
+    header{
+        flex-direction: column;
+    }
+
+    header ul{
+        flex-direction: column;
+        padding-top: 20px;
     }
 }
